@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/koor.png">
+    <link rel="stylesheet" href="style.css">
+    <title>MOOSH KOSH</title>
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+    <img src="./img/potk.png" class="potk">
+    <div class="scoretable">
+        <div>
+            TIME LEFT :
+            <p class="time">60</p>
+        </div>
+        <div>
+            SCORE :
+            <p class="score">0</p>
+        </div>
+    </div>
+    <div class="holes"></div>
+    <div class="modal">
+        <div class="display">
+            <button>START THE GAME</button>
+            <h2>GAME OVER!</h2>
+            <h1>
+                HIGH SCORE :
+                <p class="highscore">0</p>
+            </h1>
+        </div>
+    </div>
+    <div>
+        <audio id="gamesong" controls loop style="display: none;">
+            <source src="sounds/game-music.mp3">
+        </audio>
+        <div id="music">
+            <div class="play playpausebtn" onclick="playpause()"></div>
+        </div>
+    </div>
+    <div class="creator">
+        <div>Powered by Amirreza Moradzadeh</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
+<!-- Powered by Amirreza Moradzadeh -->
